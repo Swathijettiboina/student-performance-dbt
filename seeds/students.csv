@@ -1,0 +1,4 @@
+student_id,name,department_id,enrollment_date
+1,Alice,101,2022-06-10
+2,Bob,102,2022-07-15
+3,Charlie,103,2022-08-20

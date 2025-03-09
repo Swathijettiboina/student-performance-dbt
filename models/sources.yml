@@ -1,0 +1,36 @@
+version: 2
+
+sources:
+  - name: student_trans_project
+    description: "Source tables for students, departments, and marks"
+    database: STUDENT_DB
+    schema: STUDENT_SCHEMA
+
+    tables:
+      - name: students
+        description: "Raw students data table"
+        columns:
+          - name: student_id
+            description: "Primary key for students"
+          - name: name
+            description: "Student name"
+          - name: department_id
+            description: "Foreign key to departments"
+
+      - name: departments
+        description: "Department details"
+        columns:
+          - name: department_id
+            description: "Primary key for departments"
+          - name: department_name
+            description: "Name of the department"
+
+      - name: marks
+        description: "Marks obtained by students"
+        columns:
+          - name: student_id
+            description: "Foreign key to students"
+          - name: subject
+            description: "Subject name"
+          - name: marks
+            description: "Marks obtained by student"
